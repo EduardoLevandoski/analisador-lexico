@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/utils.js"></script>
+    <script type="text/javascript" src="assets/js/automato.js"></script>
+    <script type="text/javascript" src="assets/js/analisador.js"></script>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+</head>
+
+<body>
+    <div>
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <div class="pt-4 px-3">
+                        <h3>Analisador Léxico</h3>
+                        <hr />
+                        <div class="form-data d-flex flex-column align-items-end pb-4">
+                            <input class="form-control" type="text" placeholder="Digite um token" autocorrect="off"
+                                spellcheck="false" type="text" id="input-token" list="auto-complete" autocomplete="off">
+                            <div class="button-group pt-2">
+                                <button type="button" class="btn btn-danger mr-1"
+                                    onclick="removePalavra()">Remover</button>
+                                <button type="button" class="btn btn-success mr-1"
+                                    onclick="adicionaPalavra()">Adicionar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <div class="py-4 px-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="pt-2">Dicionário</h3>
+                            <form class="m-0">
+                                <button type="submit" class="btn btn-info mr-1" id="resetDB"
+                                    onsubmit="return false;">Limpar</button>
+                            </form>
+                        </div>
+                        <hr />
+                        <div id="dicionario">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="card">
+                    <div class="py-4 px-3">
+                        <div id="analyser" class="d-flex justify-content-between align-items-center">
+                            <h3>Autômato</h3>
+                            <div class="form-data m-0 d-flex align-items-center">
+                                <input class="form-control mr-3" type="text" placeholder="Digite uma palavra"
+                                    autocorrect="off" spellcheck="false" id="input-palavra" list="auto-complete"
+                                    autocomplete="off" size="30">
+                                <span id="valida-palavra" class="default">-</span>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="automoto">
+                            <div class="scroll">
+                                <div id="regras"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

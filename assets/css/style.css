@@ -1,0 +1,107 @@
+/* Principal */
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 25px;
+    width: auto;
+    height: auto;
+    background-color: aliceblue;
+    color: #000;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-height: 120vh;
+}
+
+/* Botões */
+.button-group {
+    margin-top: auto;
+}
+
+.label-btn {
+    margin: 5px;
+    background-color: rgb(215, 227, 255);
+}
+
+.label-btn:hover {
+    background-color: rgb(140, 175, 255);
+}
+
+/* Tabela */
+
+
+.table {
+    height: 40px;
+    font-size: 12px;
+    border: 1px solid lightgray;
+    text-align: center;
+}
+
+.automoto {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+th,
+td {
+    border: 1px solid lightgray;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(90, 105, 135);
+    color: #fff;
+}
+
+.destacaCampo {
+    background-color: rgb(140, 175, 255);
+}
+
+.destacaCampoLight {
+    background-color: rgb(230, 240, 255);
+}
+
+.destacaCampoInvalido {
+    background-color: rgb(255, 140, 140);
+}
+
+.destacaCampoInvalidoLight {
+    background-color: rgb(255, 214, 214);
+}
+
+#valida-palavra {
+    min-width: 120px;
+    padding: 5px;
+    background-color: rgb(230, 240, 255);
+    border: 1px solid rgb(208, 227, 255);
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+span.cell-state {
+    float: right;
+    right: 10px;
+    top: 12px;
+}
+
+.default {
+    color: rgb(188, 207, 255);
+    background-color: rgb(230, 240, 255);
+    border: 1px solid rgb(208, 227, 255);
+}
+
+.valido {
+    color: white;
+    background-color: rgb(46, 196, 46) !important;
+}
+
+.invalido {
+    color: white;
+    background-color: #ff6767 !important;
+}
